@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<title>Login-Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/png" href="images/loginlogo1.png">
+<body>
+
+<div class="w3-container w3-content w3-center" style="max-width:1000px">
+  <h1 class="w3-wide"><strong>Strix Login Modal</strong></h1>
+  <header class="w3-center">
+
+  <div class="w3-content" style="max-width:2000px;margin-top:2px">
+  <!-- Automatic Slideshow Images -->
+    <!--<div class="mySlides w3-display-container w3-center">
+      <img src="images/top1.jpg" alt="img1" style="width:100% height=50%>
+      <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+        <h3><strong>SIGN IN</strong></h3>
+        
+      </div>
+    </div>-->
+
+    <div class="mySlides w3-display-container w3-center">
+      <img src="images/top1.jpg" alt="img1" style="width:100%">
+      <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+        <h1><strong>SIGN IN</strong></h1>
+        <section class="w3-center">
+          <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-center w3-blue w3-margin-top w3-large">Login</button>
+        </section>  
+      </div>
+    </div>
+  </div>
+
+  <!--<section class="w3-center">
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-center w3-black w3-margin-top w3-large">Login</button>
+  </section>-->
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+  
+      <div class="w3-center"><br>
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-transparent w3-display-topright" title="Close Modal">×</span>
+        <img src="images/loginlogo.jpg" alt="loginlogo" style="width:30%" class=" w3-margin-top"> <!--w3-circle-->
+      </div>
+
+      <form class="w3-container" action="/action_page.php">
+        <div class="w3-section">
+          <label><b>Username</b></label>
+          <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username" name="usrname" required>
+          <label><b>Password</b></label>
+          <input class="w3-input w3-border" type="text" placeholder="Enter Password" name="psw" required>
+          <button class="w3-button w3-block w3-blue w3-section w3-padding" type="submit">Login</button>
+          <input class="w3-check w3-margin-top" type="checkbox" checked="checked"> Remember me
+        </div>
+      </form>
+
+      <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+        <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-black">Cancel</button>
+        <span class="w3-right w3-padding w3-hide-small">Forgot <a href="#">password?</a></span>
+      </div>
+
+    </div>
+  </div>
+</div>
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <p class="w3-medium">&copy;HarshaStrix 2020 Powered by <a href="" target="_blank">Strix</a></p>
+</footer>
+</body>
+</html>
